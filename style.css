@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+* {box-sizing:border-box}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+}
+.mySlides {
+    display: none;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 8px 28px;
+    position: absolute;
+    top: 30%;
+    letter-spacing: 0.5rem;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    width: 200px;
+    height: 60px;
+}
+header {
+    padding: 20px;
+    color: #cccccc;
+    text-align: center;
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 404;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+.hero p {
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+.advantages {
+    background: url("imgs/advantades.jpg") no-repeat center/cover;
+    width: 100%;
+}
+.advantages, .blog, .contact h2 ,.location, .footer {
+    padding: 50px;
+    text-align: center;
+}
+.advantages h2 {
+    color: white;
+    margin-bottom: 4rem;
+}
+.blog {
+    background: linear-gradient(to right, #c3c3dc, #62627e);
+}
+.blog-article {
+    margin-bottom: 20px;
+}
+.card {
+    max-width: 960px;
+    color: white;
+    border-radius: 2px;
+    box-shadow: 24px 24px 80px rgba(0,0,0,0.1);
+    padding: 20px 20px 28px 20px;
+    box-sizing: border-box;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.card__image {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 2px;
+    object-fit: cover;
+    margin-bottom: 18px;
+}
+.card__date {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+.card__title {
+    box-decoration-break: clone;
+    background-size: 100% 42%;
+    background-repeat: no-repeat;
+    background-position: 0 85%;
+    padding: 0 4px;
+    margin-left: -4px;
+}
+
+.contact {
+    padding: 50px;
+}
+.contact-form {
+    width: 460px;
+    margin: auto;
+}
+.contact-form input {
+    border-radius: 10px;
+    border: 1px solid #f4b749;
+    box-shadow: none;
+}
+.contact-form input,
+.contact-form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+.contact-form button {
+    width: 50%;
+    margin: 2rem auto;
+    border: none;
+    border-radius: 10px;
+    background-color: #f4b749;
+}
+.iti--allow-dropdown input {
+    width: 192%;
+}
+.footer {
+    background: #2e77bf;
+    color: white;
+}
+.cookie-popup {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: none;
+}
+.slider-container {
+    width: 100%;
+    max-width: 600px; /* Встановіть потрібну ширину */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%; /* Щоб відображався один слайд повністю */
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 28px;
+    margin: 0;
+    background: linear-gradient(to right, #c3c3dc, #62627e);
+    text-align: center;
+}
+.slide h3,
+.slide p{
+    color: white;
+    letter-spacing: 0.1rem;
+}
+.slide:hover {
+    box-shadow: 0 0.5rem 2rem rgba(3, 180, 216, 0.3);
+}
+
+.slider-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slider-controls .arrow {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    color: #c5c2c2;
+}
+
+.location { padding: 50px; text-align: center; }
+.map-container, .location a {
+    width: 60%;
+    height: 400px;
+    margin: 0 auto;
+}
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+}
