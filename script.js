@@ -76,3 +76,19 @@ L.marker([51.5074, -0.1278]).addTo(map)
     .bindPopup('London, UK')
     .openPopup();
 
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    let observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+            }
+        });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll(".card").forEach(card => {
+        setTimeout(() => observer.observe(card), 500); /* Додає затримку перед перевіркою */
+    });
+});
+
